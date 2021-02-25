@@ -1,0 +1,10 @@
+// vocab
+- authentication: user is who they say they are. passwords are how they make sure
+- authorization: process that happens after authentication. already determined who they are and they will look up whta they are allowed to do. determine what actions they can take
+
+// creating a user
+-'
+
+
+// To log out
+right click > clear cookie
