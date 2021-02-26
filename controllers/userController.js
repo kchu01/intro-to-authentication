@@ -41,11 +41,16 @@ router.post('/login', async (req, res) => {
     // if yes, set the cookie userId = user.id
     if (user.password === req.body.password) {
         res.cookie('userId', user.id)
-        res.redirect('/')
+        res.redirect('/users/profile')
     } else {
         // if no, render the login form
         res.render('users/login')
     }
+})
+
+// PROFILE
+router.get('/profile', (req, res) => {
+    res.render("users/profile")
 })
 
 /** LOGOUT */
